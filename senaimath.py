@@ -1,6 +1,6 @@
+# Tiago
 
 anguloRecebido = float(input("Digite o ângulo em graus: "))
-
 
 pi = 3.141592653589793
 
@@ -11,7 +11,6 @@ def radiano(angulo):
     return rad
 
 radianoConvertido = radiano(anguloRecebido)
-
 
 def funcao_taylor(rad, k):
     sin = 0
@@ -32,4 +31,17 @@ def funcao_taylor(rad, k):
 
 resultado = funcao_taylor(radianoConvertido, k)
 print(f'O seno do angulo {anguloRecebido} = {resultado:.6f}')
+
+#Arthur
+def pi(n_termos=100000000): #numero default de termos cem milhões
+    pi_quarto = 0
+    for n in range(n_termos):
+        termo = ((-1)**n) / (2*n + 1)
+        pi_quarto += termo
+    
+    return pi_quarto * 4
+
+
+aproximacao = pi()
+print(f"PI aproximado: {aproximacao}")
 
