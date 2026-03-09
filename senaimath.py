@@ -41,11 +41,6 @@ def pi(n_termos=100000000): #numero default de termos cem milhões
     
     return pi_quarto * 4
 
-    for num in range(0,precisao):
-        if num > 0:
-            fatorial *= num
-            e_calculado += 1 / fatorial
-    return e_calculado
 
 aproximacao = pi()
 print(f"PI aproximado: {aproximacao}")
